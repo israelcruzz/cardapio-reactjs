@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+# Cardapio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de site de cardápio construído com React e Typescript. O site permite aos usuários visualizar opções de alimentos e bebidas, alternando entre as categorias de "Mais Populares", "Bebidas" e "Sobremesas". Os dados são gerenciados por meio do useState e um mock em TypeScript.
 
-Currently, two official plugins are available:
+## Instalação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Certifique-se de ter o Node.js e o npm instalados em seu ambiente de desenvolvimento.
 
-## Expanding the ESLint configuration
+1. Clone o repositório:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/seu-usuario/menu-website.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navegue até o diretório do projeto:
+
+```bash
+cd menu-website
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+## Uso
+
+Após a instalação, você pode iniciar o site localmente. Execute o seguinte comando:
+
+```bash
+npm start
+```
+
+O site será iniciado e estará disponível em [http://localhost:3000](http://localhost:3000) no seu navegador.
+
+## Estrutura do Projeto
+
+- `src/components`: Contém os componentes React reutilizáveis.
+- `src/data`: Armazena os mocks e dados simulados.
+- `src/pages`: Páginas principais do site.
+- `src/styles`: Arquivos de estilo do site.
+
+## Tecnologias Utilizadas
+
+- React
+- Typescript
+
+## Funcionalidades
+
+- **Navegação entre Categorias**: Os usuários podem alternar entre as categorias "Mais Populares", "Bebidas" e "Sobremesas".
+
+- **useState para Gerenciamento de Estado**: Utilizamos a hook `useState` do React para gerenciar o estado dos componentes.
+
+- **Mock de Dados em TypeScript**: Os dados do cardápio são simulados usando um mock em TypeScript, permitindo fácil extensibilidade e manutenção.
+
+## Contribuição
+
+Sinta-se à vontade para contribuir para o desenvolvimento deste projeto. Basta criar um fork do repositório, fazer suas modificações e enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
